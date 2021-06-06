@@ -27,17 +27,17 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 
 	helpButton[0][1] = ext.InlineKeyboardButton{
 		Text: "My Creater",
-		Url:  "https://telegram.dog/Anandpskerala",
+		Url:  "https://t.me/kasu_bro",
 	}
 
 	helpButton[1][0] = ext.InlineKeyboardButton{
-		Text: "How to create a bot like me?",
-		Url:  "https://www.youtube.com/watch?v=swg6un2N4Fk&feature=youtu.be",
+		Text: "join with us",
+		Url:  "https://t.me/epusthakalaya_bots",
 	}
 
 	markup := ext.InlineKeyboardMarkup{InlineKeyboard: &helpButton}
 
-	msg := b.NewSendableMessage(u.EffectiveChat.Id, "Forward Me A File,Video,Audio,Photo or Anything And \nI will Send You the File Back\n\n`How to Set Caption?`\nReply Caption to a File,Photo,Audio,Media")
+	msg := b.NewSendableMessage(u.EffectiveChat.Id, "Forward Me A File,Video,Audio,Photo or Anything And \nI will Send You the File Back\n\n`How to Set Caption?`\nReply Caption to a File,Photo,Audio,Media📑")
 	msg.ReplyToMessageId = u.EffectiveMessage.MessageId
 	msg.ReplyMarkup = &markup
 	msg.ParseMode = parsemode.Markdown
